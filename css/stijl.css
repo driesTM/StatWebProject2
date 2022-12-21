@@ -15,7 +15,16 @@ body{
    margin: 5px;
    padding: 0px;
   }
-  
+  ol{
+    list-style-type: none;   
+    overflow: hidden;
+    background-color: gray;
+    margin: 5px;
+    padding: 0px;
+   }
+   .onaangepast{
+    float: none;
+   }
   li{
   float: left;
   }
@@ -126,10 +135,26 @@ body{
 th, td{
 color: orange;
 }
+.progress{
+  height: 25px;
+}
+.carousel-caption{
+  margin-bottom: 20px;
+}
+.none{
+  float: none;
+}
 
+select{
+  color: orange;
+}
 
-
-
+button{
+  margin-bottom: 20px;
+}
+label{
+  float: left;
+}
  
 
 

@@ -42,9 +42,10 @@
         </div>
       </nav>   
 
-      <div class="container-fluid">
-<section class="tekst">
-<h1>Contact</h1>  
+
+<div class="container-fluid">
+  <section class="tekst">
+  <h1>Contact</h1>  
 
  <ul>
  <li class="none">Telefoonnummer: 04......</li>
@@ -52,36 +53,47 @@
  <li class="none"><a href="mailto:r0713696@student.thomasmore.be">E-mail: r0713696@student.thomasmore.be</a></li>     
  </ul>
 
-<p>U kan ook altijd onderstaand formulier invullen. Ik probeer u dan zo snel mogelijk terug te contacteren.</p>
+  <p>U kan ook altijd onderstaand formulier invullen. Ik probeer u dan zo snel mogelijk terug te contacteren.</p>
 
- <form action="https://tm-statweb.be/sendmail.php" method="post">
-    <div>
-        <label for="naam">Naam: <input type="text" id="naam" name="naam" required></label>
+  <div>
+
+
+  <form>
+    <div class="col">
+      <label for="validationDefault02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationDefault01" placeholder="Kris" required>
     </div>
-
-    <div>
-        <label for="email">Email: <input type="email" id="email" name="email" required></label>
+    <div class="col">
+      <label for="validationDefault01" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationDefault02" placeholder="Kringle" required>
     </div>
-
-    <div>
-        <label for="onderwerp">Onderwerp: <input type="text" id="onderwerp" name="onderwerp" required ></label>
+  
+    <div class="col">
+      <label for="validationDefault03" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="E-mail" placeholder="dekerstman@noordpool.com" patter="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+      
     </div>
-
-    <div>
-    <label for="vraag">Vraag: <textarea rows="5" id="vraag" name="vraag"></textarea></label>
-    </div>
-
+    <label for="selection" class="form-label">Selecteer de nodige skill</label>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>SQL</option>
+        <option value="1">C#</option>
+        <option value="2">CSS</option>
+        <option value="3">HTML</option>
+      </select>
+      <div class="col">
+        <label for="Vraag">Noteer hier je vraag.</label>
+        <textarea class="form-control" placeholder="Noteer je vraag." id="floatingTextarea"></textarea>
+        
+      </div>
+      <div class="col">
+        <button class="btn btn-warning" type="submit" value="Submit">Versturen</button>
+      </div>
     
-    <input type="hidden" name="studentemail" value="r0713696@student.thomasmore.be">
-    
+  </form>
 
-    <div>
-        <input type="submit" value="Indienen">
-    </div>
- </form>
- 
-</section>
- </div>
+  </div>
+  </section>
+</div>
 
  <div class="container-fluid">
     <div class="row">
